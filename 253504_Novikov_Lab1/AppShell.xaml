@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="_253504_Novikov_Lab1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:_253504_Novikov_Lab1"
+    Title="_253504_Novikov_Lab1"
+    BackgroundColor="BlueViolet">
+
+    
+    <FlyoutItem Title="Lab1" Route="MainPage">
+    <ShellContent
+        Title="Calculator"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+        
+    />
+    </FlyoutItem>
+    <FlyoutItem Title="Lab2" Route="ProgressDemo">
+        <ShellContent
+        Title="ProgressDemo"
+        ContentTemplate="{DataTemplate local:ProgressDemo}"
+        Route="ProgressDemo"
+        
+    />
+    </FlyoutItem>
+    <FlyoutItem Title="Lab3" Route="SQLiteDemo">
+    <ShellContent
+        Title="SQLiteDemo"
+        ContentTemplate="{DataTemplate local:SQLiteDemo}"
+        Route="SQLiteDemo"
+        
+    />
+    </FlyoutItem>
+
+</Shell>

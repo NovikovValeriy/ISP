@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_253504_Novikov_Lab1.MainPage">
+
+    
+    
+    <Grid BackgroundColor="WhiteSmoke" ColumnSpacing="4" RowSpacing="4" Padding="4">
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            x:Name="upperResult"
+            Text=""
+            TextColor="Gray"
+            Grid.Row="0" 
+            Grid.ColumnSpan="4"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="End"
+            FontSize="20"/>
+
+        <Label
+            x:Name="result"
+            Text="0"
+            TextColor="Black"
+            Grid.Row="1" 
+            Grid.ColumnSpan="4"
+            HorizontalTextAlignment="End"
+            VerticalTextAlignment="Start"
+            FontSize="40"
+            FontAttributes="Bold"/>
+
+        <Button
+            x:Name="inverseProportionButton"
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="1/x"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="InverseProportionClicked"
+            />
+
+        <Button
+            x:Name="clearCurrentButton"
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="CE"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="ClearClicked"
+            />
+
+        <Button
+            x:Name="clearButton"
+            Grid.Row="2"
+            Grid.Column="2"
+            Text="C"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="ClearEverythingClicked"
+            />
+
+        <Button
+            x:Name="deleteButton"
+            Grid.Row="2"
+            Grid.Column="3"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="EraseClicked"
+            />
+
+        <Image
+            MaximumHeightRequest="25"
+            Aspect="AspectFit"
+            Grid.Row="2"
+            Grid.Column="3"
+            Source="backspace.png"
+            />
+
+        <Button
+            x:Name="powerToTheYButton"
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="xʸ"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OperationsClicked"
+            />
+
+        <Button
+            x:Name="powerToTheTwoButton"
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="x²"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="PowerClicked"
+            />
+
+        <Button
+            x:Name="squareRootButton"
+            Grid.Row="3"
+            Grid.Column="2"
+            Text="√x"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="SquareClicked"
+            />
+
+        <Button
+            x:Name="divisionButton"
+            Grid.Row="3"
+            Grid.Column="3"
+            Text="÷"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OperationsClicked"
+            />
+
+        <Button
+            x:Name="sevenButton"
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="7"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="eightButton"
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="8"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="nineButton"
+            Grid.Row="4"
+            Grid.Column="2"
+            Text="9"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="multiplyButton"
+            Grid.Row="4"
+            Grid.Column="3"
+            Text="×"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OperationsClicked"
+            />
+
+        <Button
+            x:Name="fourButton"
+            Grid.Row="5"
+            Grid.Column="0"
+            Text="4"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="fiveButton"
+            Grid.Row="5"
+            Grid.Column="1"
+            Text="5"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="sixButton"
+            Grid.Row="5"
+            Grid.Column="2"
+            Text="6"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="minusButton"
+            Grid.Row="5"
+            Grid.Column="3"
+            Text="-"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OperationsClicked"
+            />
+
+        <Button
+            x:Name="oneButton"
+            Grid.Row="6"
+            Grid.Column="0"
+            Text="1"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="twoButton"
+            Grid.Row="6"
+            Grid.Column="1"
+            Text="2"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="threeButton"
+            Grid.Row="6"
+            Grid.Column="2"
+            Text="3"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="plusButton"
+            Grid.Row="6"
+            Grid.Column="3"
+            Text="+"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OperationsClicked"
+            />
+
+        <Button
+            x:Name="signButton"
+            Grid.Row="7"
+            Grid.Column="0"
+            Text="+/-"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="SignClicked"
+            />
+
+        <Button
+            x:Name="zeroButton"
+            Grid.Row="7"
+            Grid.Column="1"
+            Text="0"
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="OnClicked"
+            />
+
+        <Button
+            x:Name="factionButton"
+            Grid.Row="7"
+            Grid.Column="2"
+            Text="."
+            FontSize="25"
+            BackgroundColor="White"
+            TextColor="Black"
+            Clicked="FactionClicked"
+            />
+
+        <Button
+            x:Name="equalButton"
+            Grid.Row="7"
+            Grid.Column="3"
+            Text="="
+            FontSize="25"
+            BackgroundColor="ForestGreen"
+            TextColor="White"
+            Clicked="EvaluateClicked"
+            />
+    </Grid>
+
+</ContentPage>
