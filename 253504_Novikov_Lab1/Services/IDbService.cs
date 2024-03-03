@@ -9,8 +9,8 @@ namespace _253504_Novikov_Lab1.Services
 {
     public interface IDbService
     {
-        IEnumerable<Ward> GetAllWards();
-        IEnumerable<Patient> GetWardsPatients(int id);
-        void Init();
+        Task<IEnumerable<Ward>> GetAllWards();
+        Task<IEnumerable<Patient>> GetWardsPatients(int id);
+        Task Init();
     }
 }

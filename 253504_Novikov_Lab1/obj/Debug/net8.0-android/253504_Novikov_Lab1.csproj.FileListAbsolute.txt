@@ -1023,7 +1023,6 @@ C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\o
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
-C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\lp\96\jl\files.cache
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\lp\99\jl\files.cache
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\lp\100\jl\files.cache
@@ -1043,3 +1042,4 @@ C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\o
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.core.dll
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

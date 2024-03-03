@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("253504_Novikov_Lab1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3f6a2ad219743b5c37fbcb983c5bda18a8370753")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4ac1cc98b667187b18b2741a336ade712d5d1c2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("253504_Novikov_Lab1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("253504_Novikov_Lab1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
