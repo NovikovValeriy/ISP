@@ -5,9 +5,8 @@
              Title="SQLiteDemo">
     <VerticalStackLayout>
         <Picker x:Name="WardsPicker"  Title="Выберите палату" SelectedIndexChanged="WardIdChanged" Margin="10,20,10,20" />
-        <ScrollView>
-            <StackLayout x:Name="SearchResultContainer">
-            </StackLayout>
-        </ScrollView>
+        <CollectionView x:Name="collectionView" HeightRequest="650">
+            
+        </CollectionView>
     </VerticalStackLayout>
 </ContentPage>

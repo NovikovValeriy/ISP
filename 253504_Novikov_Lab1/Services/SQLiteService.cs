@@ -74,27 +74,27 @@ namespace _253504_Novikov_Lab1.Services
             List<Ward> DBWards = await _connection.Table<Ward>().ToListAsync();
             var patients = new List<Patient>
             {
-                new Patient{FirstName = "Кирилл", LastName = "Маханько", Sex = "M", Age = 18, Diagnosis = diagnosisList[16], WardId = DBWards[0].Id},
-                new Patient{FirstName = "Иван", LastName = "Павловский", Sex = "M", Age = 43, Diagnosis = diagnosisList[4], WardId = DBWards[0].Id},
-                new Patient{FirstName = "Евгений", LastName = "Андреев", Sex = "M", Age = 32, Diagnosis = diagnosisList[5], WardId = DBWards[0].Id},
+                new Patient{FirstName = "Кирилл", LastName = "Маханько", Sex = "Мужской", Age = 18, Diagnosis = diagnosisList[16], WardId = DBWards[0].Id},
+                new Patient{FirstName = "Иван", LastName = "Павловский", Sex = "Мужской", Age = 43, Diagnosis = diagnosisList[4], WardId = DBWards[0].Id},
+                new Patient{FirstName = "Евгений", LastName = "Андреев", Sex = "Мужской", Age = 32, Diagnosis = diagnosisList[5], WardId = DBWards[0].Id},
                 
-                new Patient{FirstName = "Анастасия", LastName = "Петрова", Sex = "F", Age = 22, Diagnosis = diagnosisList[12], WardId = DBWards[1].Id},
-                new Patient{FirstName = "Екатерина", LastName = "Фролова", Sex = "F", Age = 19, Diagnosis = diagnosisList[1], WardId = DBWards[1].Id},
-                new Patient{FirstName = "Ксения", LastName = "Виноградова", Sex = "F", Age = 23, Diagnosis = diagnosisList[3], WardId = DBWards[1].Id},
-                new Patient{FirstName = "Кристина", LastName = "Волкова", Sex = "F", Age = 25, Diagnosis = diagnosisList[3], WardId = DBWards[1].Id},
-                new Patient{FirstName = "Мария", LastName = "Никитина", Sex = "F", Age = 19, Diagnosis = diagnosisList[4], WardId = DBWards[1].Id},
-                new Patient{FirstName = "Елена", LastName = "Смирнова", Sex = "F", Age = 24, Diagnosis = diagnosisList[13], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Анастасия", LastName = "Петрова", Sex = "Женский", Age = 22, Diagnosis = diagnosisList[12], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Екатерина", LastName = "Фролова", Sex = "Женский", Age = 19, Diagnosis = diagnosisList[1], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Ксения", LastName = "Виноградова", Sex = "Женский", Age = 23, Diagnosis = diagnosisList[3], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Кристина", LastName = "Волкова", Sex = "Женский", Age = 25, Diagnosis = diagnosisList[3], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Мария", LastName = "Никитина", Sex = "Женский", Age = 19, Diagnosis = diagnosisList[4], WardId = DBWards[1].Id},
+                new Patient{FirstName = "Елена", LastName = "Смирнова", Sex = "Женский", Age = 24, Diagnosis = diagnosisList[13], WardId = DBWards[1].Id},
 
-                new Patient{FirstName = "Леонид", LastName = "Лопатин", Sex = "M", Age = 33, Diagnosis = diagnosisList[9], WardId = DBWards[2].Id},
-                new Patient{FirstName = "Валерий", LastName = "Морозов", Sex = "M", Age = 18, Diagnosis = diagnosisList[7], WardId = DBWards[2].Id},
-                new Patient{FirstName = "Артем", LastName = "Сидоров", Sex = "M", Age = 24, Diagnosis = diagnosisList[2], WardId = DBWards[2].Id},
+                new Patient{FirstName = "Леонид", LastName = "Лопатин", Sex = "Мужской", Age = 33, Diagnosis = diagnosisList[9], WardId = DBWards[2].Id},
+                new Patient{FirstName = "Валерий", LastName = "Морозов", Sex = "Мужской", Age = 18, Diagnosis = diagnosisList[7], WardId = DBWards[2].Id},
+                new Patient{FirstName = "Артем", LastName = "Сидоров", Sex = "Мужской", Age = 24, Diagnosis = diagnosisList[2], WardId = DBWards[2].Id},
 
-                new Patient{FirstName = "Александр", LastName = "Жаров", Sex = "M", Age = 26, Diagnosis = diagnosisList[8], WardId = DBWards[3].Id},
-                new Patient{FirstName = "Степан", LastName = "Ларионов", Sex = "M", Age = 21, Diagnosis = diagnosisList[8], WardId = DBWards[3].Id},
-                new Patient{FirstName = "Богдан", LastName = "Одинцов", Sex = "M", Age = 19, Diagnosis = diagnosisList[5], WardId = DBWards[3].Id},
-                new Patient{FirstName = "Владислав", LastName = "Гринкевич", Sex = "M", Age = 45, Diagnosis = diagnosisList[14], WardId = DBWards[3].Id},
-                new Patient{FirstName = "Олег", LastName = "Гончаров", Sex = "M", Age = 36, Diagnosis = diagnosisList[10], WardId = DBWards[3].Id},
-                new Patient{FirstName = "Николай", LastName = "Семенов", Sex = "M", Age = 32, Diagnosis = diagnosisList[6], WardId = DBWards[3].Id}
+                new Patient{FirstName = "Александр", LastName = "Жаров", Sex = "Мужской", Age = 26, Diagnosis = diagnosisList[8], WardId = DBWards[3].Id},
+                new Patient{FirstName = "Степан", LastName = "Ларионов", Sex = "Мужской", Age = 21, Diagnosis = diagnosisList[8], WardId = DBWards[3].Id},
+                new Patient{FirstName = "Богдан", LastName = "Одинцов", Sex = "Мужской", Age = 19, Diagnosis = diagnosisList[5], WardId = DBWards[3].Id},
+                new Patient{FirstName = "Владислав", LastName = "Гринкевич", Sex = "Мужской", Age = 45, Diagnosis = diagnosisList[14], WardId = DBWards[3].Id},
+                new Patient{FirstName = "Олег", LastName = "Гончаров", Sex = "Мужской", Age = 36, Diagnosis = diagnosisList[10], WardId = DBWards[3].Id},
+                new Patient{FirstName = "Николай", LastName = "Семенов", Sex = "Мужской", Age = 32, Diagnosis = diagnosisList[6], WardId = DBWards[3].Id}
             };
             await _connection.InsertAllAsync(patients);
         }
