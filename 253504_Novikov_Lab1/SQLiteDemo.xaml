@@ -4,9 +4,10 @@
              x:Class="_253504_Novikov_Lab1.SQLiteDemo"
              Title="SQLiteDemo">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Picker x:Name="WardsPicker"  Title="Выберите палату" SelectedIndexChanged="WardIdChanged" Margin="0,20,0,20" />
+        <ScrollView>
+            <StackLayout x:Name="SearchResultContainer">
+            </StackLayout>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>

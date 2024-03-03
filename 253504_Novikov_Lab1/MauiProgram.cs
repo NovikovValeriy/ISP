@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using _253504_Novikov_Lab1.Services;
+using Microsoft.Extensions.Logging;
 
 namespace _253504_Novikov_Lab1
 {
@@ -18,7 +19,8 @@ namespace _253504_Novikov_Lab1
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddTransient<IDbService, SQLiteService>();
+            builder.Services.AddSingleton<SQLiteDemo>();
             return builder.Build();
         }
     }
