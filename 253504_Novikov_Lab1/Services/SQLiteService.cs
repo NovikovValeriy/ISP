@@ -11,11 +11,16 @@ namespace _253504_Novikov_Lab1.Services
     public class SQLiteService : IDbService
     {
         private const string DB_NAME = "local_db.db3";
+        private string databasePath = Path.Combine(FileSystem.AppDataDirectory, DB_NAME);
         private  SQLiteConnection _connection;
 
         public SQLiteService()
         {
-            _connection = new SQLiteConnection(Path.Combine(FileSystem.AppDataDirectory, DB_NAME));
+            if (File.Exists(databasePath))
+            {
+                File.Delete(databasePath);
+            }
+            _connection = new SQLiteConnection(databasePath);
             _connection.CreateTables<Ward, Patient>();
             Init();
         }
@@ -42,12 +47,14 @@ namespace _253504_Novikov_Lab1.Services
                 "Психотическое расстройство",
                 "Расстройство личности",
                 "Расстройство алкогольного и вещественного злоупотребления",
-                "Пищевые нарушения (анорексия, булимия)",
+                "Анорексия", 
+                "Булимия",
                 "Расстройство дефицита внимания с гиперактивностью (ADHD)",
                 "Паническое расстройство",
                 "Травматическое стрессовое расстройство (ПТСР)",
-                "Фобии (например, социальная фобия, агорафобия)",
-                "Нарушение сна (инсомния, нарколепсия)",
+                "Cоциальная фобия",
+                "Агорафобия",
+                "Нарколепсия",
                 "Эпилепсия с психическими расстройствами"
             };
             var random = new Random();

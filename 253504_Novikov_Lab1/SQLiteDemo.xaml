@@ -4,7 +4,7 @@
              x:Class="_253504_Novikov_Lab1.SQLiteDemo"
              Title="SQLiteDemo">
     <VerticalStackLayout>
-        <Picker x:Name="WardsPicker"  Title="Выберите палату" SelectedIndexChanged="WardIdChanged" Margin="0,20,0,20" />
+        <Picker x:Name="WardsPicker"  Title="Выберите палату" SelectedIndexChanged="WardIdChanged" Margin="10,20,10,20" />
         <ScrollView>
             <StackLayout x:Name="SearchResultContainer">
             </StackLayout>
