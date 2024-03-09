@@ -51,7 +51,6 @@ public partial class SQLiteDemo : ContentPage
 
 	private async void WardIdChanged(object sender, EventArgs e)
 	{
-        //SearchResultContainer.Children.Clear();
         string? selectedOption = WardsPicker.SelectedItem.ToString();
         
         Ward? w = wards.Where(x => x.Name == selectedOption).FirstOrDefault();
@@ -67,16 +66,5 @@ public partial class SQLiteDemo : ContentPage
         }
 
         collectionView.ItemsSource = patients;
-        //foreach (Patient patient in patients)
-        //{
-            //Label patientLabel = new Label
-            //{
-            //    Text = patient.FirstName + " " + patient.LastName + ", " + patient.Sex + ", " + patient.Age.ToString() + ", " + patient.Diagnosis,
-            //    HorizontalOptions = LayoutOptions.Start,
-            //    VerticalOptions = LayoutOptions.Center,
-            //    Margin = new Thickness(10, 10, 10, 10)
-            //};
-            //SearchResultContainer.Children.Add(patientLabel);
-        //}
     }
 }

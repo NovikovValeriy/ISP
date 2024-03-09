@@ -21,6 +21,9 @@ namespace _253504_Novikov_Lab1
 #endif
             builder.Services.AddTransient<IDbService, SQLiteService>();
             builder.Services.AddSingleton<SQLiteDemo>();
+            builder.Services.AddTransient<IRateService, RateService>();
+            builder.Services.AddHttpClient<IRateService, RateService>(opt => opt.BaseAddress = new Uri("https://api.nbrb.by/exrates/rates/"));
+            builder.Services.AddSingleton<CurrencyConverter>();
             return builder.Build();
         }
     }

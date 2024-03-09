@@ -1043,3 +1043,9 @@ C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\o
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.lib.e_sqlite3.android.dll
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Diagnostics.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Http.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\dzmitry\source\repos\4sem\ISP\253504_Novikov_Lab1\253504_Novikov_Lab1\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll

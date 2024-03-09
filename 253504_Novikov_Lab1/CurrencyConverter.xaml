@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_253504_Novikov_Lab1.CurrencyConverter"
+             Title="CurrencyConverter">
+    <VerticalStackLayout>
+        <DatePicker
+            x:Name="datePicker"
+            FontSize="25"
+            Margin="15,15,15,0"
+        />
+        <Label
+            Text="Курс на выбранную дату:"
+            FontSize="30"
+            Margin="15,15,15,0"
+        />
+        <Grid Margin="15,15,15,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label
+                Text="RUB"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="0"
+            />
+            <Label
+                Text="EUR"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+            <Label
+                Text="USD"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="2"
+            />
+            <Label
+                Text="CHF"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="3"
+            />
+            <Label
+                Text="CNY"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="4"
+            />
+            <Label
+                Text="GBP"
+                FontSize="25"
+                Grid.Column="0"
+                Grid.Row="5"
+            />
+
+            <Label
+                x:Name="RUBrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="0"
+            />
+            <Label
+                x:Name="EURrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="1"
+            />
+            <Label
+                x:Name="USDrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="2"
+            />
+            <Label
+                x:Name="CHFrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="3"
+            />
+            <Label
+                x:Name="CNYrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="4"
+            />
+            <Label
+                x:Name="GBPrate"
+                Text=""
+                FontSize="25"
+                Grid.Column="2"
+                Grid.Row="5"
+            />
+        </Grid>
+
+        <Label
+            Text="Конвертер валют"
+            FontSize="30"
+            Margin="15,25,15,0"
+        />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Picker
+                x:Name="inputPicker"
+                Title="Выберите валюту"
+                FontSize="20"
+                Margin="15,15,15,0"
+                Grid.Column="0"
+                Grid.Row="0"
+            />
+            <Editor
+                x:Name="inputEditor"
+                Text=""
+                Keyboard="Numeric"
+                Placeholder="Введите кол-во"
+                FontSize="25"
+                Margin="0,15,15,0"
+                Grid.Column="1"
+                Grid.Row="0"
+            />
+
+            <Picker
+                x:Name="resultPicker"
+                Title="Выберите валюту"
+                FontSize="20"
+                Margin="15,15,15,0"
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+            <Label
+                x:Name="resultLabel"
+                Text="0"
+                FontSize="25"
+                VerticalTextAlignment="Center"
+                Margin="0,15,15,0"
+                Grid.Column="1"
+                Grid.Row="1"
+            />
+        </Grid>
+
+        <Button
+            x:Name="countButton"
+            Margin="15,25,15,15"
+            Text="Рассчитать"
+            FontSize="20"
+            BackgroundColor="PaleVioletRed"
+            Clicked="Calculate"
+        />
+
+    </VerticalStackLayout>
+</ContentPage>
